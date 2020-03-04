@@ -1,6 +1,5 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const Mentions = require('./models/mentions');
 
 require('dotenv').config();
 
@@ -37,7 +36,12 @@ process.on('SIGINT', () => {
 	process.exit(0);
 });
 
+const Mentions = require('./models/mentions');
+
 const indexRoutes = require('./routes/index-routes');
 app.use('/', indexRoutes);
+
+const mentionsRoutes = require('./routes/mentions-route');
+app.use('/mentions', mentionsRoutes);
 
 module.exports = app;

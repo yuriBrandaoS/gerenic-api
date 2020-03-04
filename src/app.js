@@ -1,15 +1,17 @@
 const express = require('express');
 const mongoose = require('mongoose');
-
 require('dotenv').config();
 
+//app
 const app = express();
+app.use(express.json());
+app.use(express.urlencoded({extended: true}));
 
 //Database
 mongoose.connect(process.env.DATABASE_CONNECTION_STRING, {
-	useNewUrlParser: true,
 	useUnifiedTopology: true,
 	useFindAndModify: true,
+	useNewUrlParser: true,
 	useCreateIndex: true
 });
 
@@ -19,7 +21,7 @@ db.on('connected', () => {
 	console.log('Mongoose connection is open');
 });
 
-db.error('error', err => {
+db.on('error', err => {
 	console.log(`Mongoose default connection has occured \n${err}`);
 });
 
@@ -41,7 +43,7 @@ const Mentions = require('./models/mentions');
 const indexRoutes = require('./routes/index-routes');
 app.use('/', indexRoutes);
 
-const mentionsRoutes = require('./routes/mentions-route');
+const mentionsRoutes = require('./routes/mentions-routes');
 app.use('/mentions', mentionsRoutes);
 
 module.exports = app;

@@ -23,8 +23,8 @@ exports.createMention = async(req, res) => {
 
 		await mention.save();
 
-		res.status(201).send({message: 'Mention registred with success'})
+		res.status(201).send({message: 'Mention registred with success'});
 	} catch(e) {
-		res.status(500).send({message: 'Mentions register failed'});
+		res.status(500).send({message: 'fail register'});
 	}
 };

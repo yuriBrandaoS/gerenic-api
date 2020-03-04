@@ -13,4 +13,4 @@ const schema = new Schema({
 	}
 });
 
-module.exports = mongoose.model('Mentios', schema);
+module.exports = mongoose.model('Mentions', schema);

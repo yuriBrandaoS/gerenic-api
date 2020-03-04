@@ -1,0 +1,27 @@
+{
+  "name": "generic-api",
+  "version": "1.0.0",
+  "description": "Esse projeto disponibiliza uma api genérica desenvolvida em Node.js, express e MongoDB.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node node_modules/nodemon/bin/nodemon bin/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuriBrandaoS/gerenic-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuriBrandaoS/gerenic-api/issues"
+  },
+  "homepage": "https://github.com/yuriBrandaoS/gerenic-api#readme",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

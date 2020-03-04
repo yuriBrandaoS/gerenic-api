@@ -19,7 +19,7 @@
   "homepage": "https://github.com/yuriBrandaoS/gerenic-api#readme",
   "dependencies": {
     "debug": "^4.1.1",
-    "express": "^4.17.1",
+    "express": "^4.17.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"

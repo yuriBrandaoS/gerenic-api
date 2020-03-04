@@ -15,5 +15,14 @@ Para executar o projeto, será necessário instalar os seguintes programas:
 Para iniciar o desenvolvimento, é necessário clonar o projeto do GitHub num diretório de sua preferência:
 
 
-``` cd "diretorio de sua preferencia" ```
-``` git clone https://github.com/condessalovelace/mavenquickstart ```
+``` cd "diretorio de sua preferencia" 
+``` git clone https://github.com/yuriBrandaoS/gerenic-api```
+
+Ao abrir a pasta do projeto rode o comando abaixo para instalar todas as dependências do package.json:
+
+``` npm install ```
+
+Para rodar em dev o seguinte código:
+
+``` npm run dev ```
+

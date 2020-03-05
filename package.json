@@ -4,7 +4,8 @@
   "description": "Esse projeto disponibiliza uma api genérica desenvolvida em Node.js, express e MongoDB.",
   "main": "index.js",
   "scripts": {
-    "dev": "node node_modules/nodemon/bin/nodemon bin/server"
+    "dev": "node node_modules/nodemon/bin/nodemon bin/server",
+    "start": "node bin/server.js"
   },
   "repository": {
     "type": "git",
